@@ -37,7 +37,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 1"
+                android:text="sedan 1"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan"
                 android:textSize="20sp" />
@@ -77,7 +77,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 2"
+                android:text="sedan 2"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan1"
                 android:textSize="20sp" />
@@ -117,7 +117,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 3"
+                android:text="sedan 3"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan2"
                 android:textSize="20sp" />
@@ -156,7 +156,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 4"
+                android:text="sedan 4"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan3"
                 android:textSize="20sp" />
@@ -195,7 +195,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 5"
+                android:text="sedan 5"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan4"
                 android:textSize="20sp" />
@@ -234,7 +234,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 6"
+                android:text="sedan 6"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan5"
                 android:textSize="20sp" />
@@ -273,7 +273,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 7"
+                android:text="sedan 7"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan6"
                 android:textSize="20sp" />
@@ -312,7 +312,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 8"
+                android:text="sedan 8"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan7"
                 android:textSize="20sp" />
@@ -351,7 +351,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 9"
+                android:text="sedan 9"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan8"
                 android:textSize="20sp" />
@@ -390,7 +390,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SEDAN 10"
+                android:text="sedan 10"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_sedan9"
                 android:textSize="20sp" />

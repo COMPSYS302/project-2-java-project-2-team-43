@@ -37,7 +37,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COUPE 1"
+                android:text="coupe 1"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_coupe"
                 android:textSize="20sp" />
@@ -117,7 +117,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COUPE 3"
+                android:text="coupe 3"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_coupe2"
                 android:textSize="20sp" />
@@ -156,7 +156,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COUPE 4"
+                android:text="coupe 4"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_coupe3"
                 android:textSize="20sp" />
@@ -195,7 +195,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COUPE 5"
+                android:text="coupe 5"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_coupe4"
                 android:textSize="20sp" />
@@ -234,7 +234,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COUPE 6"
+                android:text="coupe 6"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_coupe5"
                 android:textSize="20sp" />
@@ -273,7 +273,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COUPE 7"
+                android:text="coupe 7"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_coupe6"
                 android:textSize="20sp" />
@@ -312,7 +312,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COUPE 8"
+                android:text="coupe 8"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_coupe7"
                 android:textSize="20sp" />
@@ -351,7 +351,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COUPE 9"
+                android:text="coupe 9"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_coupe8"
                 android:textSize="20sp" />
@@ -390,7 +390,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COUPE 10"
+                android:text="coupe 10"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_coupe9"
                 android:textSize="20sp" />

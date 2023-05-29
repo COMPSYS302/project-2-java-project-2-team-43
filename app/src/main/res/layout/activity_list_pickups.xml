@@ -37,7 +37,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 1"
+                android:text="pickup 1"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup"
                 android:textSize="20sp" />
@@ -77,7 +77,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 2"
+                android:text="pickup 2"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup1"
                 android:textSize="20sp" />
@@ -117,7 +117,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 3"
+                android:text="pickup 3"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup2"
                 android:textSize="20sp" />
@@ -156,7 +156,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 4"
+                android:text="pickup 4"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup3"
                 android:textSize="20sp" />
@@ -195,7 +195,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 5"
+                android:text="pickup 5"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup4"
                 android:textSize="20sp" />
@@ -234,7 +234,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 6"
+                android:text="pickup 6"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup5"
                 android:textSize="20sp" />
@@ -273,7 +273,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 7"
+                android:text="pickup 7"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup6"
                 android:textSize="20sp" />
@@ -312,7 +312,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 8"
+                android:text="pickup 8"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup7"
                 android:textSize="20sp" />
@@ -351,7 +351,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 9"
+                android:text="pickup 9"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup8"
                 android:textSize="20sp" />
@@ -390,7 +390,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PICKUP 10"
+                android:text="pickup 10"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@id/image_pickup9"
                 android:textSize="20sp" />
