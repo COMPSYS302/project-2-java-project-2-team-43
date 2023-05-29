@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1FF">
+<!--    for testing only-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="24sp"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/layout_sedan"
+                    android:layout_width="0dp"
+                    android:layout_height="225dp"
+                    app:layout_constraintEnd_toStartOf="@+id/layout_hatchback"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/image_sedan"
+                        android:src="@drawable/sedan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_alignBottom="@+id/image_sedan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7F100050">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Sedan"
+                            android:textColor="#F1F1F1"
+                            android:textSize="16sp"
+                            android:layout_margin="10dp"/>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_hatchback"
+                    app:layout_constraintWidth_default="percent"
+                    app:layout_constraintWidth_percent=".45"
+                    app:layout_constraintHeight_default="percent"
+                    app:layout_constraintHeight_percent=".3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0dp"
+                    android:layout_height="225dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/image_hatchback"
+                        android:src="@drawable/hatchback"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_alignBottom="@+id/image_hatchback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7F100050">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Hatchback"
+                            android:textColor="#F1F1F1"
+                            android:textSize="16sp"
+                            android:layout_margin="10dp"/>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_convertible"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_width="165dp"
+            android:layout_height="225dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/image_convertible"
+                android:src="@drawable/convertible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_alignBottom="@+id/image_convertible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7F100050">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Convertible"
+                    android:textColor="#F1F1F1"
+                    android:textSize="16sp"
+                    android:layout_margin="10dp"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_coupe"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_width="165dp"
+            android:layout_height="225dp">
+
+            <ImageView
+                android:id="@+id/image_coupe"
+                android:src="@drawable/coupe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_alignBottom="@+id/image_coupe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7F100050">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Coupe"
+                    android:textColor="#F1F1F1"
+                    android:textSize="16sp"
+                    android:layout_margin="10dp"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_suv"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_width="165dp"
+            android:layout_height="225dp">
+
+            <ImageView
+                android:id="@+id/image_suv"
+                android:src="@drawable/suv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_alignBottom="@+id/image_suv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7F100050">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="SUV"
+                    android:textColor="#F1F1F1"
+                    android:textSize="16sp"
+                    android:layout_margin="10dp"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_pickup"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_width="165dp"
+            android:layout_height="225dp">
+
+            <ImageView
+                android:id="@+id/image_pickup"
+                android:src="@drawable/pickup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_alignBottom="@+id/image_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7F100050">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pickup"
+                    android:textColor="#F1F1F1"
+                    android:textSize="16sp"
+                    android:layout_margin="10dp"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
