@@ -22,9 +22,10 @@ public class DetailsActivity extends AppCompatActivity {
         ImageSlider imageSlider = findViewById(R.id.detailsActivityimageslider);
         ArrayList<SlideModel> slideModels = new ArrayList<>();
 
-        slideModels.add(new SlideModel(R.drawable.sedan, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.gmwg2_1, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.gmwg2_2, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.gmwg2, ScaleTypes.CENTER_CROP));
+        slideModels.add(new SlideModel(R.drawable.interior1, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.interior2, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.interior3, ScaleTypes.FIT));
 
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1FF"
+    tools:context=".ListCoupes">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Coupes:"
+            android:textSize="24sp"
+            android:layout_marginBottom="7dp"/>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image_coupe"
+                android:src="@drawable/coupe"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUPE 1"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name"
+                android:layout_toRightOf="@id/image_coupe"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:onClick="showDetailsActivity">
+
+            <ImageView
+                android:id="@+id/image_coupe1"
+                android:src="@drawable/gmwg2"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name1"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GMW G2"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name1"
+                android:layout_toRightOf="@id/image_coupe1"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+
+            <ImageView
+                android:id="@+id/image_coupe2"
+                android:src="@drawable/coupe"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name2"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUPE 3"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name2"
+                android:layout_toRightOf="@id/image_coupe2"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image_coupe3"
+                android:src="@drawable/coupe"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name3"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUPE 4"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe3"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name3"
+                android:layout_toRightOf="@id/image_coupe3"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image_coupe4"
+                android:src="@drawable/coupe"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name4"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUPE 5"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe4"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name4"
+                android:layout_toRightOf="@id/image_coupe4"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image_coupe5"
+                android:src="@drawable/coupe"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name5"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUPE 6"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name5"
+                android:layout_toRightOf="@id/image_coupe5"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image_coupe6"
+                android:src="@drawable/coupe"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name6"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUPE 7"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe6"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name6"
+                android:layout_toRightOf="@id/image_coupe6"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image_coupe7"
+                android:src="@drawable/coupe"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name7"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUPE 8"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe7"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name7"
+                android:layout_toRightOf="@id/image_coupe7"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image_coupe8"
+                android:src="@drawable/coupe"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name8"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUPE 9"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe8"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name8"
+                android:layout_toRightOf="@id/image_coupe8"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image_coupe9"
+                android:src="@drawable/coupe"
+                android:layout_width="120dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/text_view_name9"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COUPE 10"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/image_coupe9"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$68,990"
+                android:layout_below="@id/text_view_name9"
+                android:layout_toRightOf="@id/image_coupe9"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/listDivider"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

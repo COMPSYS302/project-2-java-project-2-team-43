@@ -15,13 +15,14 @@
         app:cardBackgroundColor="@color/purple"
         tools:ignore="MissingConstraints">
 
+<!--        https://github.com/denzcoskun/ImageSlideshow -->
         <com.denzcoskun.imageslider.ImageSlider
             android:id="@+id/detailsActivityimageslider"
             android:layout_width="match_parent"
             android:layout_height="270dp"
             app:iss_auto_cycle="true"
-            app:iss_delay="1000"
-            app:iss_period="1000"
+            app:iss_delay="2000"
+            app:iss_period="2000"
             app:iss_title_background="@drawable/gradient">
 
         </com.denzcoskun.imageslider.ImageSlider>
@@ -68,7 +69,7 @@
         android:layout_height="242dp"
         android:lineSpacingExtra="5dp"
         android:layout_marginTop="4dp"
-        android:text="Two door performance coupe\nEngine size: 2979cc\nTransmission: Manual\nFuel Economy: 8.8L/100km\nMileage: 35,000km"
+        android:text="Two door performance coupe\nColour: Metallic Blue\nEngine size: 2979cc\nTransmission: Manual\nFuel Economy: 8.8L/100km\nMileage: 35,000km"
         app:layout_constraintEnd_toEndOf="@+id/divider2"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         tools:layout_editor_absoluteY="365dp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F1FF"
+    android:background="#E1E1FF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -16,9 +16,30 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:text="Best Sellers"
+            android:textSize="24sp"
+            android:layout_marginBottom="6dp"/>
+
+<!--        https://github.com/denzcoskun/ImageSlideshow -->
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/mainActivityimageslider"
+            android:layout_width="346dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            app:iss_auto_cycle="true"
+            app:iss_delay="3000"
+            app:iss_period="3000"
+            android:layout_marginBottom="16dp"
+            app:iss_title_background="@drawable/gradient">
+
+        </com.denzcoskun.imageslider.ImageSlider>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="Categories"
             android:textSize="24sp"
-            android:layout_marginBottom="4dp"/>
+            android:layout_marginBottom="6dp"/>
 
         <GridLayout
             android:layout_width="wrap_content"
@@ -122,6 +143,7 @@
                 android:id="@+id/layout_coupe"
                 android:layout_row="1"
                 android:layout_column="1"
+                android:onClick="showListActivity"
                 android:layout_width="165dp"
                 android:layout_height="225dp">
 

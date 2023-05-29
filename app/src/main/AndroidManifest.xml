@@ -13,16 +13,21 @@
         android:theme="@style/Theme.CarApp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:name=".ListCoupes"
+            android:exported="false"
+            android:label="Category" />
         <activity
-            android:name=".DetailsActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false">
         </activity>
     </application>
 
