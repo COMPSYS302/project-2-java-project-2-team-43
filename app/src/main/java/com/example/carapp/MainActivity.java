@@ -31,10 +31,39 @@ public class MainActivity extends AppCompatActivity {
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
     }
 
-    public void showListActivity(View v)
+    public void showListSedans(View v)
     {
-        Intent listActivity = new Intent(this, ListCoupes.class);
-        startActivity(listActivity);
+        Intent listSedans = new Intent(this, ListSedans.class);
+        startActivity(listSedans);
     }
 
+    public void showListHatchbacks(View v)
+    {
+        Intent listHatchbacks = new Intent(this, ListHatchbacks.class);
+        startActivity(listHatchbacks);
+    }
+
+    public void showListConvertibles(View v)
+    {
+        Intent listConvertibles = new Intent(this, ListConvertibles.class);
+        startActivity(listConvertibles);
+    }
+
+    public void showListCoupes(View v)
+    {
+        Intent listCoupes = new Intent(this, ListCoupes.class);
+        startActivity(listCoupes);
+    }
+
+    public void showListSUVs(View v)
+    {
+        Intent listSUVs = new Intent(this, ListSUVs.class);
+        startActivity(listSUVs);
+    }
+
+    public void showListPickups(View v)
+    {
+        Intent listPickups = new Intent(this, ListPickups.class);
+        startActivity(listPickups);
+    }
 }

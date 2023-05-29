@@ -11,7 +11,7 @@ public class ListCoupes extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coupes);
+        setContentView(R.layout.activity_list_coupes);
     }
 
     public void showDetailsActivity(View v)
