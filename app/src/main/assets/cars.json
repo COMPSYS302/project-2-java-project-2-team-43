@@ -1,0 +1,534 @@
+{
+  "cars": [
+    {
+      "name": "BMW M2",
+      "price": "$10,000",
+      "category": "Sedan",
+      "description": "Two door performance coupe\\nColour: Metallic Blue\\nEngine size: 2979cc\\nTransmission: Manual\\nFuel Economy: 8.8L/100km\\nMileage: 35,000km",
+      "image": "gmw_g2",
+      "slide_images": ["gmw_g2_1", "gmw_g2_2", "gmw_g2_3"]
+    },
+    {
+      "name": "Audi RS3",
+      "price": "$90,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Nardo Grey\\nEngine size: 2480cc\\nTransmission: Automatic\\nFuel Economy: 8.3L/100km\\nMileage: 30,000km",
+      "image": "audi_rs3",
+      "slide_images": ["audi_rs3_1", "audi_rs3_2", "audi_rs3_3"]
+    },
+    {
+      "name": "Mercedes-AMG C63",
+      "price": "$120,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Obsidian Black\\nEngine size: 3982cc\\nTransmission: Automatic\\nFuel Economy: 8.6L/100km\\nMileage: 25,000km",
+      "image": "mercedes_c63",
+      "slide_images": ["mercedes_c63_1", "mercedes_c63_2", "mercedes_c63_3"]
+    },
+    {
+      "name": "Alfa Romeo Giulia Quadrifoglio",
+      "price": "$130,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Alfa Rosso\\nEngine size: 2891cc\\nTransmission: Automatic\\nFuel Economy: 8.2L/100km\\nMileage: 20,000km",
+      "image": "alfa_giulia",
+      "slide_images": ["alfa_giulia_1", "alfa_giulia_2", "alfa_giulia_3"]
+    },
+    {
+      "name": "Cadillac ATS-V",
+      "price": "$110,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Phantom Grey\\nEngine size: 3564cc\\nTransmission: Automatic\\nFuel Economy: 9.1L/100km\\nMileage: 40,000km",
+      "image": "cadillac_ats",
+      "slide_images": ["cadillac_ats_1", "cadillac_ats_2", "cadillac_ats_3"]
+    },
+    {
+      "name": "BMW M5",
+      "price": "$170,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Metallic Blue\\nEngine size: 4395cc\\nTransmission: Automatic\\nFuel Economy: 10.5L/100km\\nMileage: 15,000km",
+      "image": "bmw_m5",
+      "slide_images": ["bmw_m5_1", "bmw_m5_2", "bmw_m5_3"]
+    },
+    {
+      "name": "Jaguar XE SV Project 8",
+      "price": "$190,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Valencia Orange\\nEngine size: 5000cc\\nTransmission: Automatic\\nFuel Economy: 11.0L/100km\\nMileage: 10,000km",
+      "image": "jaguar_xe",
+      "slide_images": ["jaguar_xe_1", "jaguar_xe_2", "jaguar_xe_3"]
+    },
+    {
+      "name": "Porsche Panamera Turbo",
+      "price": "$230,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Jet Black\\nEngine size: 3996cc\\nTransmission: Automatic\\nFuel Economy: 10.4L/100km\\nMileage: 8,000km",
+      "image": "porsche_panamera",
+      "slide_images": ["porsche_panamera_1", "porsche_panamera_2", "porsche_panamera_3"]
+    },
+    {
+      "name": "Lexus GS F",
+      "price": "$105,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Ultrasonic Blue\\nEngine size: 4969cc\\nTransmission: Automatic\\nFuel Economy: 11.3L/100km\\nMileage: 35,000km",
+      "image": "lexus_gs",
+      "slide_images": ["lexus_gs_1", "lexus_gs_2", "lexus_gs_3"]
+    },
+    {
+      "name": "Maserati Ghibli S Q4",
+      "price": "$150,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Nero Ribelle\\nEngine size: 2979cc\\nTransmission: Automatic\\nFuel Economy: 9.6L/100km\\nMileage: 28,000km",
+      "image": "maserati_ghibli",
+      "slide_images": ["maserati_ghibli_1", "maserati_ghibli_2", "maserati_ghibli_3"]
+    },
+    {
+      "name": "Tesla Model S Plaid",
+      "price": "$220,000",
+      "category": "Sedan",
+      "description": "Four door performance sedan\\nColour: Pearl White\\nEngine size: Electric\\nTransmission: Automatic\\nFuel Economy: 1.5L/100km Equivalent\\nMileage: 5,000km",
+      "image": "tesla_model_s",
+      "slide_images": ["tesla_model_s_1", "tesla_model_s_2", "tesla_model_s_3"]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "name": "Audi A5 Coupe",
+      "price": "$95,000",
+      "category": "Coupe",
+      "description": "Two door premium coupe\\nColour: Moonlight Blue\\nEngine size: 1984cc\\nTransmission: Automatic\\nFuel Economy: 6.5L/100km\\nMileage: 25,000km",
+      "image": "audi_a5",
+      "slide_images": ["audi_a5_1", "audi_a5_2", "audi_a5_3"]
+    },
+    {
+      "name": "Mercedes-Benz C-Class Coupe",
+      "price": "$100,000",
+      "category": "Coupe",
+      "description": "Two door luxury coupe\\nColour: Polar White\\nEngine size: 1497cc\\nTransmission: Automatic\\nFuel Economy: 7.8L/100km\\nMileage: 30,000km",
+      "image": "merc_c_coupe",
+      "slide_images": ["merc_c_coupe_1", "merc_c_coupe_2", "merc_c_coupe_3"]
+    },
+    {
+      "name": "BMW 4 Series Coupe",
+      "price": "$98,000",
+      "category": "Coupe",
+      "description": "Two door sports coupe\\nColour: Black Sapphire\\nEngine size: 1998cc\\nTransmission: Automatic\\nFuel Economy: 6.4L/100km\\nMileage: 35,000km",
+      "image": "bmw_4_coupe",
+      "slide_images": ["bmw_4_coupe_1", "bmw_4_coupe_2", "bmw_4_coupe_3"]
+    },
+    {
+      "name": "Infiniti Q60",
+      "price": "$90,000",
+      "category": "Coupe",
+      "description": "Two door luxury coupe\\nColour: Dynamic Sunstone Red\\nEngine size: 2997cc\\nTransmission: Automatic\\nFuel Economy: 9.2L/100km\\nMileage: 40,000km",
+      "image": "infiniti_q60",
+      "slide_images": ["infiniti_q60_1", "infiniti_q60_2", "infiniti_q60_3"]
+    },
+    {
+      "name": "Toyota 86",
+      "price": "$45,000",
+      "category": "Coupe",
+      "description": "Two door sports coupe\\nColour: Lightning Red\\nEngine size: 1998cc\\nTransmission: Manual\\nFuel Economy: 7.8L/100km\\nMileage: 20,000km",
+      "image": "toyota_86",
+      "slide_images": ["toyota_86_1", "toyota_86_2", "toyota_86_3"]
+    },
+    {
+      "name": "Ford Mustang",
+      "price": "$80,000",
+      "category": "Coupe",
+      "description": "Two door sports coupe\\nColour: Kona Blue\\nEngine size: 4951cc\\nTransmission: Automatic\\nFuel Economy: 12.7L/100km\\nMileage: 40,000km",
+      "image": "ford_mustang",
+      "slide_images": ["ford_mustang_1", "ford_mustang_2", "ford_mustang_3"]
+    },
+    {
+      "name": "Chevrolet Camaro",
+      "price": "$85,000",
+      "category": "Coupe",
+      "description": "Two door sports coupe\\nColour: Red Hot\\nEngine size: 6162cc\\nTransmission: Manual\\nFuel Economy: 14.1L/100km\\nMileage: 45,000km",
+      "image": "chevy_camaro",
+      "slide_images": ["chevy_camaro_1", "chevy_camaro_2", "chevy_camaro_3"]
+    },
+    {
+      "name": "Lexus RC",
+      "price": "$105,000",
+      "category": "Coupe",
+      "description": "Two door luxury coupe\\nColour: Ultra White\\nEngine size: 3456cc\\nTransmission: Automatic\\nFuel Economy: 9.4L/100km\\nMileage: 38,000km",
+      "image": "lexus_rc",
+      "slide_images": ["lexus_rc_1", "lexus_rc_2", "lexus_rc_3"]
+    },
+    {
+      "name": "Subaru BRZ",
+      "price": "$48,000",
+      "category": "Coupe",
+      "description": "Two door sports coupe\\nColour: Crystal Black Silica\\nEngine size: 1998cc\\nTransmission: Manual\\nFuel Economy: 8.4L/100km\\nMileage: 25,000km",
+      "image": "subaru_brz",
+      "slide_images": ["subaru_brz_1", "subaru_brz_2", "subaru_brz_3"]
+    },
+    {
+      "name": "Porsche 911 Carrera",
+      "price": "$200,000",
+      "category": "Coupe",
+      "description": "Two door sports coupe\\nColour: Guards Red\\nEngine size: 2981cc\\nTransmission: Automatic\\nFuel Economy: 9.0L/100km\\nMileage: 30,000km",
+      "image": "porsche_911",
+      "slide_images": ["porsche_911_1", "porsche_911_2", "porsche_911_3"]
+    },
+
+
+
+
+
+
+
+
+    {
+      "name": "BMW Z4",
+      "price": "$85,000",
+      "category": "Convertible",
+      "description": "Two door luxury convertible\\nColour: Misano Blue\\nEngine size: 1998cc\\nTransmission: Automatic\\nFuel Economy: 6.5L/100km\\nMileage: 30,000km",
+      "image": "bmw_z4",
+      "slide_images": ["bmw_z4_1", "bmw_z4_2", "bmw_z4_3"]
+    },
+    {
+      "name": "Audi A3 Cabriolet",
+      "price": "$65,000",
+      "category": "Convertible",
+      "description": "Two door premium convertible\\nColour: Glacier White\\nEngine size: 1498cc\\nTransmission: Automatic\\nFuel Economy: 5.8L/100km\\nMileage: 25,000km",
+      "image": "audi_a3",
+      "slide_images": ["audi_a3_1", "audi_a3_2", "audi_a3_3"]
+    },
+    {
+      "name": "Mercedes-Benz SLC",
+      "price": "$80,000",
+      "category": "Convertible",
+      "description": "Two door luxury convertible\\nColour: Polar White\\nEngine size: 1991cc\\nTransmission: Automatic\\nFuel Economy: 6.4L/100km\\nMileage: 30,000km",
+      "image": "merc_slc",
+      "slide_images": ["merc_slc_1", "merc_slc_2", "merc_slc_3"]
+    },
+    {
+      "name": "Mazda MX-5",
+      "price": "$45,000",
+      "category": "Convertible",
+      "description": "Two door sports convertible\\nColour: Soul Red Crystal\\nEngine size: 1998cc\\nTransmission: Manual\\nFuel Economy: 6.9L/100km\\nMileage: 20,000km",
+      "image": "mazda_mx5",
+      "slide_images": ["mazda_mx5_1", "mazda_mx5_2", "mazda_mx5_3"]
+    },
+    {
+      "name": "Ford Mustang Convertible",
+      "price": "$95,000",
+      "category": "Convertible",
+      "description": "Two door sports convertible\\nColour: Grabber Blue\\nEngine size: 4951cc\\nTransmission: Automatic\\nFuel Economy: 12.7L/100km\\nMileage: 40,000km",
+      "image": "ford_mustang_c",
+      "slide_images": ["ford_mustang_c_1", "ford_mustang_c_2", "ford_mustang_c_3"]
+    },
+    {
+      "name": "Chevrolet Camaro Convertible",
+      "price": "$100,000",
+      "category": "Convertible",
+      "description": "Two door sports convertible\\nColour: Summit White\\nEngine size: 6162cc\\nTransmission: Manual\\nFuel Economy: 14.1L/100km\\nMileage: 45,000km",
+      "image": "chevy_camaro_c",
+      "slide_images": ["chevy_camaro_c_1", "chevy_camaro_c_2", "chevy_camaro_c_3"]
+    },
+    {
+      "name": "Porsche 911 Carrera Convertible",
+      "price": "$230,000",
+      "category": "Convertible",
+      "description": "Two door sports convertible\\nColour: Jet Black Metallic\\nEngine size: 2981cc\\nTransmission: Automatic\\nFuel Economy: 9.0L/100km\\nMileage: 30,000km",
+      "image": "porsche_911_c",
+      "slide_images": ["porsche_911_c_1", "porsche_911_c_2", "porsche_911_c_3"]
+    },
+    {
+      "name": "Lexus LC Convertible",
+      "price": "$210,000",
+      "category": "Convertible",
+      "description": "Two door luxury convertible\\nColour: Infrared\\nEngine size: 4969cc\\nTransmission: Automatic\\nFuel Economy: 15.0L/100km\\nMileage: 50,000km",
+      "image": "lexus_lc_c",
+      "slide_images": ["lexus_lc_c_1", "lexus_lc_c_2", "lexus_lc_c_3"]
+    },
+    {
+      "name": "Jaguar F-Type Convertible",
+      "price": "$150,000",
+      "category": "Convertible",
+      "description": "Two door sports convertible\\nColour: British Racing Green\\nEngine size: 1997cc\\nTransmission: Automatic\\nFuel Economy: 7.2L/100km\\nMileage: 35,000km",
+      "image": "jaguar_ftype_c",
+      "slide_images": ["jaguar_ftype_c_1", "jaguar_ftype_c_2", "jaguar_ftype_c_3"]
+    },
+    {
+      "name": "Aston Martin Vantage Roadster",
+      "price": "$340,000",
+      "category": "Convertible",
+      "description": "Two door luxury convertible\\nColour: Skyfall Silver\\nEngine size: 3982cc\\nTransmission: Automatic\\nFuel Economy: 10.5L/100km\\nMileage: 45,000km",
+      "image": "aston_vantage_r",
+      "slide_images": ["aston_vantage_r_1", "aston_vantage_r_2", "aston_vantage_r_3"]
+    },
+
+
+
+
+
+
+
+    {
+      "name": "Volkswagen Golf GTI",
+      "price": "$60,000",
+      "category": "Hatchback",
+      "description": "Hot hatch\\nColour: Tornado Red\\nEngine size: 1984cc\\nTransmission: Automatic\\nFuel Economy: 6.4L/100km\\nMileage: 25,000km",
+      "image": "vw_golf_gti",
+      "slide_images": ["vw_golf_gti_1", "vw_golf_gti_2", "vw_golf_gti_3"]
+    },
+    {
+      "name": "Ford Focus RS",
+      "price": "$70,000",
+      "category": "Hatchback",
+      "description": "Performance hatch\\nColour: Nitrous Blue\\nEngine size: 2261cc\\nTransmission: Manual\\nFuel Economy: 7.7L/100km\\nMileage: 20,000km",
+      "image": "ford_focus_rs",
+      "slide_images": ["ford_focus_rs_1", "ford_focus_rs_2", "ford_focus_rs_3"]
+    },
+    {
+      "name": "Honda Civic Type R",
+      "price": "$75,000",
+      "category": "Hatchback",
+      "description": "Performance hatch\\nColour: Championship White\\nEngine size: 1996cc\\nTransmission: Manual\\nFuel Economy: 8.8L/100km\\nMileage: 15,000km",
+      "image": "honda_civic_tr",
+      "slide_images": ["honda_civic_tr_1", "honda_civic_tr_2", "honda_civic_tr_3"]
+    },
+    {
+      "name": "Mercedes-Benz A45 AMG",
+      "price": "$110,000",
+      "category": "Hatchback",
+      "description": "Performance hatch\\nColour: Cosmos Black\\nEngine size: 1991cc\\nTransmission: Automatic\\nFuel Economy: 8.3L/100km\\nMileage: 20,000km",
+      "image": "merc_a45_amg",
+      "slide_images": ["merc_a45_amg_1", "merc_a45_amg_2", "merc_a45_amg_3"]
+    },
+    {
+      "name": "Audi RS3",
+      "price": "$115,000",
+      "category": "Hatchback",
+      "description": "Performance hatch\\nColour: Daytona Gray\\nEngine size: 2480cc\\nTransmission: Automatic\\nFuel Economy: 8.5L/100km\\nMileage: 25,000km",
+      "image": "audi_rs3",
+      "slide_images": ["audi_rs3_1", "audi_rs3_2", "audi_rs3_3"]
+    },
+    {
+      "name": "BMW M135i",
+      "price": "$90,000",
+      "category": "Hatchback",
+      "description": "Performance hatch\\nColour: Misano Blue\\nEngine size: 1998cc\\nTransmission: Automatic\\nFuel Economy: 7.1L/100km\\nMileage: 30,000km",
+      "image": "bmw_m135i",
+      "slide_images": ["bmw_m135i_1", "bmw_m135i_2", "bmw_m135i_3"]
+    },
+    {
+      "name": "Mini Cooper S JCW",
+      "price": "$60,000",
+      "category": "Hatchback",
+      "description": "Performance hatch\\nColour: Chili Red\\nEngine size: 1998cc\\nTransmission: Automatic\\nFuel Economy: 6.7L/100km\\nMileage: 25,000km",
+      "image": "mini_cooper_s_jcw",
+      "slide_images": ["mini_cooper_s_jcw_1", "mini_cooper_s_jcw_2", "mini_cooper_s_jcw_3"]
+    },
+    {
+      "name": "Hyundai i30 N",
+      "price": "$60,000",
+      "category": "Hatchback",
+      "description": "Performance hatch\\nColour: Performance Blue\\nEngine size: 1998cc\\nTransmission: Manual\\nFuel Economy: 8.0L/100km\\nMileage: 20,000km",
+      "image": "hyundai_i30_n",
+      "slide_images": ["hyundai_i30_n_1", "hyundai_i30_n_2", "hyundai_i30_n_3"]
+    },
+    {
+      "name": "Toyota GR Yaris",
+      "price": "$65,000",
+      "category": "Hatchback",
+      "description": "Performance hatch\\nColour: Pure White\\nEngine size: 1618cc\\nTransmission: Manual\\nFuel Economy: 7.6L/100km\\nMileage: 15,000km",
+      "image": "toyota_gr_yaris",
+      "slide_images": ["toyota_gr_yaris_1", "toyota_gr_yaris_2", "toyota_gr_yaris_3"]
+    },
+    {
+      "name": "Peugeot 208 GTi",
+      "price": "$55,000",
+      "category": "Hatchback",
+      "description": "Hot hatch\\nColour: Nera Black\\nEngine size: 1598cc\\nTransmission: Manual\\nFuel Economy: 5.9L/100km\\nMileage: 25,000km",
+      "image": "peugeot_208_gti",
+      "slide_images": ["peugeot_208_gti_1", "peugeot_208_gti_2", "peugeot_208_gti_3"]
+    },
+
+
+
+
+
+
+
+    {
+      "name": "Toyota Land Cruiser Prado",
+      "price": "$100,000",
+      "category": "SUV",
+      "description": "4WD SUV\\nColour: Glacier White\\nEngine size: 3956cc\\nTransmission: Automatic\\nFuel Economy: 8.0L/100km\\nMileage: 30,000km",
+      "image": "toyota_prado",
+      "slide_images": ["toyota_prado_1", "toyota_prado_2", "toyota_prado_3"]
+    },
+    {
+      "name": "Audi Q7",
+      "price": "$140,000",
+      "category": "SUV",
+      "description": "Luxury SUV\\nColour: Orca Black\\nEngine size: 2967cc\\nTransmission: Automatic\\nFuel Economy: 7.2L/100km\\nMileage: 25,000km",
+      "image": "audi_q7",
+      "slide_images": ["audi_q7_1", "audi_q7_2", "audi_q7_3"]
+    },
+    {
+      "name": "BMW X5",
+      "price": "$150,000",
+      "category": "SUV",
+      "description": "Luxury SUV\\nColour: Arctic Grey\\nEngine size: 2998cc\\nTransmission: Automatic\\nFuel Economy: 7.5L/100km\\nMileage: 20,000km",
+      "image": "bmw_x5",
+      "slide_images": ["bmw_x5_1", "bmw_x5_2", "bmw_x5_3"]
+    },
+    {
+      "name": "Mercedes-Benz GLE",
+      "price": "$155,000",
+      "category": "SUV",
+      "description": "Luxury SUV\\nColour: Obsidian Black\\nEngine size: 2999cc\\nTransmission: Automatic\\nFuel Economy: 7.7L/100km\\nMileage: 25,000km",
+      "image": "merc_gle",
+      "slide_images": ["merc_gle_1", "merc_gle_2", "merc_gle_3"]
+    },
+    {
+      "name": "Land Rover Discovery",
+      "price": "$120,000",
+      "category": "SUV",
+      "description": "4WD SUV\\nColour: Santorini Black\\nEngine size: 2996cc\\nTransmission: Automatic\\nFuel Economy: 7.8L/100km\\nMileage: 30,000km",
+      "image": "landrover_discovery",
+      "slide_images": ["landrover_discovery_1", "landrover_discovery_2", "landrover_discovery_3"]
+    },
+    {
+      "name": "Porsche Cayenne",
+      "price": "$190,000",
+      "category": "SUV",
+      "description": "Luxury SUV\\nColour: Biscay Blue\\nEngine size: 2995cc\\nTransmission: Automatic\\nFuel Economy: 8.0L/100km\\nMileage: 20,000km",
+      "image": "porsche_cayenne",
+      "slide_images": ["porsche_cayenne_1", "porsche_cayenne_2", "porsche_cayenne_3"]
+    },
+    {
+      "name": "Volvo XC90",
+      "price": "$135,000",
+      "category": "SUV",
+      "description": "Luxury SUV\\nColour: Crystal White\\nEngine size: 1969cc\\nTransmission: Automatic\\nFuel Economy: 7.0L/100km\\nMileage: 25,000km",
+      "image": "volvo_xc90",
+      "slide_images": ["volvo_xc90_1", "volvo_xc90_2", "volvo_xc90_3"]
+    },
+    {
+      "name": "Audi Q5",
+      "price": "$115,000",
+      "category": "SUV",
+      "description": "Midsize SUV\\nColour: Ibis White\\nEngine size: 1984cc\\nTransmission: Automatic\\nFuel Economy: 6.8L/100km\\nMileage: 30,000km",
+      "image": "audi_q5",
+      "slide_images": ["audi_q5_1", "audi_q5_2", "audi_q5_3"]
+    },
+    {
+      "name": "Jeep Grand Cherokee",
+      "price": "$95,000",
+      "category": "SUV",
+      "description": "4WD SUV\\nColour: Granite Crystal\\nEngine size: 3604cc\\nTransmission: Automatic\\nFuel Economy: 8.3L/100km\\nMileage: 35,000km",
+      "image": "jeep_cherokee",
+      "slide_images": ["jeep_cherokee_1", "jeep_cherokee_2", "jeep_cherokee_3"]
+    },
+    {
+      "name": "Ford Everest",
+      "price": "$75,000",
+      "category": "SUV",
+      "description": "4WD SUV\\nColour: Arctic White\\nEngine size: 1996cc\\nTransmission: Automatic\\nFuel Economy: 7.0L/100km\\nMileage: 40,000km",
+      "image": "ford_everest",
+      "slide_images": ["ford_everest_1", "ford_everest_2", "ford_everest_3"]
+    },
+
+
+
+
+
+
+
+
+    {
+      "name": "Ford F-150",
+      "price": "$80,000",
+      "category": "Pickup Truck",
+      "description": "Full-size pickup truck\\nColour: Oxford White\\nEngine size: 3496cc\\nTransmission: Automatic\\nFuel Economy: 11.5L/100km\\nMileage: 35,000km",
+      "image": "ford_f150",
+      "slide_images": ["ford_f150_1", "ford_f150_2", "ford_f150_3"]
+    },
+    {
+      "name": "Toyota Hilux",
+      "price": "$60,000",
+      "category": "Pickup Truck",
+      "description": "Mid-size pickup truck\\nColour: Glacier White\\nEngine size: 2755cc\\nTransmission: Automatic\\nFuel Economy: 8.4L/100km\\nMileage: 45,000km",
+      "image": "toyota_hilux",
+      "slide_images": ["toyota_hilux_1", "toyota_hilux_2", "toyota_hilux_3"]
+    },
+    {
+      "name": "Chevrolet Silverado",
+      "price": "$85,000",
+      "category": "Pickup Truck",
+      "description": "Full-size pickup truck\\nColour: Northsky Blue\\nEngine size: 5328cc\\nTransmission: Automatic\\nFuel Economy: 15.0L/100km\\nMileage: 30,000km",
+      "image": "chevy_silverado",
+      "slide_images": ["chevy_silverado_1", "chevy_silverado_2", "chevy_silverado_3"]
+    },
+    {
+      "name": "Dodge Ram 1500",
+      "price": "$90,000",
+      "category": "Pickup Truck",
+      "description": "Full-size pickup truck\\nColour: Flame Red\\nEngine size: 5654cc\\nTransmission: Automatic\\nFuel Economy: 15.1L/100km\\nMileage: 35,000km",
+      "image": "dodge_ram",
+      "slide_images": ["dodge_ram_1", "dodge_ram_2", "dodge_ram_3"]
+    },
+    {
+      "name": "Nissan Navara",
+      "price": "$55,000",
+      "category": "Pickup Truck",
+      "description": "Mid-size pickup truck\\nColour: Slate Grey\\nEngine size: 2298cc\\nTransmission: Automatic\\nFuel Economy: 6.9L/100km\\nMileage: 50,000km",
+      "image": "nissan_navara",
+      "slide_images": ["nissan_navara_1", "nissan_navara_2", "nissan_navara_3"]
+    },
+    {
+      "name": "Mitsubishi Triton",
+      "price": "$52,000",
+      "category": "Pickup Truck",
+      "description": "Mid-size pickup truck\\nColour: White Diamond\\nEngine size: 2442cc\\nTransmission: Automatic\\nFuel Economy: 7.6L/100km\\nMileage: 40,000km",
+      "image": "mitsubishi_triton",
+      "slide_images": ["mitsubishi_triton_1", "mitsubishi_triton_2", "mitsubishi_triton_3"]
+    },
+    {
+      "name": "Isuzu D-Max",
+      "price": "$50,000",
+      "category": "Pickup Truck",
+      "description": "Mid-size pickup truck\\nColour: Splash White\\nEngine size: 2999cc\\nTransmission: Automatic\\nFuel Economy: 7.7L/100km\\nMileage: 45,000km",
+      "image": "isuzu_dmax",
+      "slide_images": ["isuzu_dmax_1", "isuzu_dmax_2", "isuzu_dmax_3"]
+    },
+    {
+      "name": "Volkswagen Amarok",
+      "price": "$70,000",
+      "category": "Pickup Truck",
+      "description": "Mid-size pickup truck\\nColour: Candy White\\nEngine size: 1968cc\\nTransmission: Automatic\\nFuel Economy: 8.1L/100km\\nMileage: 35,000km",
+      "image": "vw_amarok",
+      "slide_images": ["vw_amarok_1", "vw_amarok_2", "vw_amarok_3"]
+    },
+    {
+      "name": "GMC Sierra 1500",
+      "price": "$88,000",
+      "category": "Pickup Truck",
+      "description": "Full-size pickup truck\\nColour: Cardinal Red\\nEngine size: 5328cc\\nTransmission: Automatic\\nFuel Economy: 14.9L/100km\\nMileage: 32,000km",
+      "image": "gmc_sierra",
+      "slide_images": ["gmc_sierra_1", "gmc_sierra_2", "gmc_sierra_3"]
+    },
+    {
+      "name": "Ford Ranger",
+      "price": "$58,000",
+      "category": "Pickup Truck",
+      "description": "Mid-size pickup truck\\nColour: Frozen White\\nEngine size: 1996cc\\nTransmission: Automatic\\nFuel Economy: 7.8L/100km\\nMileage: 40,000km",
+      "image": "ford_ranger",
+      "slide_images": ["ford_ranger_1", "ford_ranger_2", "ford_ranger_3"]
+    }
+  ]
+}
