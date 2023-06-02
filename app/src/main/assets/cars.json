@@ -453,7 +453,7 @@
     {
       "name": "Ford F-150",
       "price": "$80,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Full-size pickup truck\\nColour: Oxford White\\nEngine size: 3496cc\\nTransmission: Automatic\\nFuel Economy: 11.5L/100km\\nMileage: 35,000km",
       "image": "ford_f150",
       "slide_images": ["ford_f150_1", "ford_f150_2", "ford_f150_3"]
@@ -461,7 +461,7 @@
     {
       "name": "Toyota Hilux",
       "price": "$60,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Mid-size pickup truck\\nColour: Glacier White\\nEngine size: 2755cc\\nTransmission: Automatic\\nFuel Economy: 8.4L/100km\\nMileage: 45,000km",
       "image": "toyota_hilux",
       "slide_images": ["toyota_hilux_1", "toyota_hilux_2", "toyota_hilux_3"]
@@ -469,7 +469,7 @@
     {
       "name": "Chevrolet Silverado",
       "price": "$85,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Full-size pickup truck\\nColour: Northsky Blue\\nEngine size: 5328cc\\nTransmission: Automatic\\nFuel Economy: 15.0L/100km\\nMileage: 30,000km",
       "image": "chevy_silverado",
       "slide_images": ["chevy_silverado_1", "chevy_silverado_2", "chevy_silverado_3"]
@@ -477,7 +477,7 @@
     {
       "name": "Dodge Ram 1500",
       "price": "$90,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Full-size pickup truck\\nColour: Flame Red\\nEngine size: 5654cc\\nTransmission: Automatic\\nFuel Economy: 15.1L/100km\\nMileage: 35,000km",
       "image": "dodge_ram",
       "slide_images": ["dodge_ram_1", "dodge_ram_2", "dodge_ram_3"]
@@ -485,7 +485,7 @@
     {
       "name": "Nissan Navara",
       "price": "$55,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Mid-size pickup truck\\nColour: Slate Grey\\nEngine size: 2298cc\\nTransmission: Automatic\\nFuel Economy: 6.9L/100km\\nMileage: 50,000km",
       "image": "nissan_navara",
       "slide_images": ["nissan_navara_1", "nissan_navara_2", "nissan_navara_3"]
@@ -493,7 +493,7 @@
     {
       "name": "Mitsubishi Triton",
       "price": "$52,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Mid-size pickup truck\\nColour: White Diamond\\nEngine size: 2442cc\\nTransmission: Automatic\\nFuel Economy: 7.6L/100km\\nMileage: 40,000km",
       "image": "mitsubishi_triton",
       "slide_images": ["mitsubishi_triton_1", "mitsubishi_triton_2", "mitsubishi_triton_3"]
@@ -501,7 +501,7 @@
     {
       "name": "Isuzu D-Max",
       "price": "$50,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Mid-size pickup truck\\nColour: Splash White\\nEngine size: 2999cc\\nTransmission: Automatic\\nFuel Economy: 7.7L/100km\\nMileage: 45,000km",
       "image": "isuzu_dmax",
       "slide_images": ["isuzu_dmax_1", "isuzu_dmax_2", "isuzu_dmax_3"]
@@ -509,7 +509,7 @@
     {
       "name": "Volkswagen Amarok",
       "price": "$70,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Mid-size pickup truck\\nColour: Candy White\\nEngine size: 1968cc\\nTransmission: Automatic\\nFuel Economy: 8.1L/100km\\nMileage: 35,000km",
       "image": "vw_amarok",
       "slide_images": ["vw_amarok_1", "vw_amarok_2", "vw_amarok_3"]
@@ -517,7 +517,7 @@
     {
       "name": "GMC Sierra 1500",
       "price": "$88,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Full-size pickup truck\\nColour: Cardinal Red\\nEngine size: 5328cc\\nTransmission: Automatic\\nFuel Economy: 14.9L/100km\\nMileage: 32,000km",
       "image": "gmc_sierra",
       "slide_images": ["gmc_sierra_1", "gmc_sierra_2", "gmc_sierra_3"]
@@ -525,7 +525,7 @@
     {
       "name": "Ford Ranger",
       "price": "$58,000",
-      "category": "Pickup Truck",
+      "category": "Pickup",
       "description": "Mid-size pickup truck\\nColour: Frozen White\\nEngine size: 1996cc\\nTransmission: Automatic\\nFuel Economy: 7.8L/100km\\nMileage: 40,000km",
       "image": "ford_ranger",
       "slide_images": ["ford_ranger_1", "ford_ranger_2", "ford_ranger_3"]

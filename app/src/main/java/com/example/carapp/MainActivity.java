@@ -1,69 +1,95 @@
 package com.example.carapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
-    @Override
+    private String[] carCategories = new String[] {"Sedan", "Hatchback", "Convertible", "Coupe", "SUV", "Pickup"};
+    private ArrayAdapter<String> adapter;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageSlider imageSlider = findViewById(R.id.mainActivityimageslider);
-        ArrayList<SlideModel> slideModels = new ArrayList<>();
+        ListView listView = findViewById(R.id.list);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, carCategories);
+        listView.setAdapter(adapter);
 
-        slideModels.add(new SlideModel(R.drawable.sedan, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.hatchback, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.convertible, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.coupe, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.suv, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.pickup, ScaleTypes.CENTER_CROP));
-
-        imageSlider.setImageList(slideModels, ScaleTypes.FIT);
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            String selectedCategory = carCategories[position];
+            Intent intent = new Intent(MainActivity.this, CarListActivity.class);
+            intent.putExtra("SELECTED_CATEGORY", selectedCategory);
+            startActivity(intent);
+        });
     }
 
-    public void showListSedans(View v)
-    {
-        Intent listSedans = new Intent(this, ListSedans.class);
-        startActivity(listSedans);
+    public String loadJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getAssets().open("cars.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
     }
 
-    public void showListHatchbacks(View v)
-    {
-        Intent listHatchbacks = new Intent(this, ListHatchbacks.class);
-        startActivity(listHatchbacks);
-    }
+    public List<Car> getCarList() {
+        List<Car> carList = new ArrayList<>();
 
-    public void showListConvertibles(View v)
-    {
-        Intent listConvertibles = new Intent(this, ListConvertibles.class);
-        startActivity(listConvertibles);
-    }
+        try {
+            JSONObject obj = new JSONObject(loadJSONFromAsset());
+            JSONArray jsonArray = obj.getJSONArray("cars");
 
-    public void showListCoupes(View v)
-    {
-        Intent listCoupes = new Intent(this, ListCoupes.class);
-        startActivity(listCoupes);
-    }
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
 
-    public void showListSUVs(View v)
-    {
-        Intent listSUVs = new Intent(this, ListSUVs.class);
-        startActivity(listSUVs);
-    }
+                String name = jsonObject.getString("name");
+                String price = jsonObject.getString("price");
+                String category = jsonObject.getString("category");
+                String description = jsonObject.getString("description");
+                String image = jsonObject.getString("image");
 
-    public void showListPickups(View v)
-    {
-        Intent listPickups = new Intent(this, ListPickups.class);
-        startActivity(listPickups);
+                JSONArray slideImagesJsonArray = jsonObject.getJSONArray("slide_images");
+                List<String> slideImages = new ArrayList<>();
+                for (int j = 0; j < slideImagesJsonArray.length(); j++) {
+                    slideImages.add(slideImagesJsonArray.getString(j));
+                }
+
+                Car car = new Car(name, price, category, description, image, slideImages);
+                carList.add(car);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return carList;
     }
 }
