@@ -12,25 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarApp"
         tools:targetApi="31">
-        <activity
-            android:name=".ListPickups"
-            android:exported="false" />
-        <activity
-            android:name=".ListSUVs"
-            android:exported="false" />
-        <activity
-            android:name=".ListHatchbacks"
-            android:exported="false" />
-        <activity
-            android:name=".ListConvertibles"
-            android:exported="false" />
-        <activity
-            android:name=".ListSedans"
-            android:exported="false" />
-        <activity
-            android:name=".ListCoupes"
-            android:exported="false"
-            android:label="Category" />
+        <!--        <activity-->
+<!--            android:name=".ListCoupes"-->
+<!--            android:exported="false"-->
+<!--            android:label="Category" />-->
+        <activity android:name=".CarListActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -40,9 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".DetailsActivity"
-            android:exported="false" />
+        <activity android:name=".CarDetailActivity" />
+        <activity android:name=".SearchActivity" />
+        <!--        <activity-->
+<!--            android:name=".DetailsActivity"-->
+<!--            android:exported="false" />-->
     </application>
 
 </manifest>

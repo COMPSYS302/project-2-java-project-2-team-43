@@ -1,1 +1,9 @@
-"# project-2-java-project-2-team-43" 
+Carzz application for Compsys 302
+
+6 categories:
+Sedan
+Hatchback
+Convertible
+Coupe
+SUV
+Pickup

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5FF"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:src="@drawable/sedan"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        android:background="@drawable/round_outline1"/>
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sedan 1"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/car_image"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/car_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$99,999"
+        android:layout_below="@id/car_name"
+        android:layout_toRightOf="@id/car_image"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:textSize="15sp" />
+
+</RelativeLayout>
