@@ -1,6 +1,7 @@
 package com.example.carapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,6 +14,7 @@ import android.widget.ListView;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,10 +30,21 @@ public class MainActivity extends AppCompatActivity {
 
     private String[] carCategories = new String[] {"Sedan", "Hatchback", "Convertible", "Coupe", "SUV", "Pickup"};
     private ArrayAdapter<String> adapter;
+    private SearchView searchView;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FloatingActionButton fab = findViewById(R.id.floatingActionButton);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         ListView listView = findViewById(R.id.list);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, carCategories);
@@ -44,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
 
     public String loadJSONFromAsset() {
         String json = null;
@@ -92,4 +106,5 @@ public class MainActivity extends AppCompatActivity {
 
         return carList;
     }
+
 }

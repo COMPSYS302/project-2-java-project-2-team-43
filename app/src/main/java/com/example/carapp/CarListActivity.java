@@ -10,6 +10,8 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,6 +30,15 @@ public class CarListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_coupes);
+
+        FloatingActionButton fab = findViewById(R.id.floatingActionButton2);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CarListActivity.this, SearchActivity.class);
+                startActivity(intent);
+            }
+        });
 
         Intent intent = getIntent();
         String selectedCategory = intent.getStringExtra("SELECTED_CATEGORY");
@@ -95,24 +106,3 @@ public class CarListActivity extends AppCompatActivity {
     }
 }
 
-//
-//import androidx.appcompat.app.AppCompatActivity;
-//
-//import android.content.Intent;
-//import android.os.Bundle;
-//import android.view.View;
-//
-//public class ListCoupes extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_list_coupes);
-//    }
-//
-//    public void showDetailsActivity(View v)
-//    {
-//        Intent detailsActivity = new Intent(this, DetailsActivity.class);
-//        startActivity(detailsActivity);
-//    }
-//}
