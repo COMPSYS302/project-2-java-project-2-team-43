@@ -21,7 +21,7 @@ import java.util.List;
 public class SearchActivity extends AppCompatActivity {
 
     private ArrayList<Car> cars;
-    private ArrayAdapter<Car> adapter;
+    private CarAdaptor adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class SearchActivity extends AppCompatActivity {
         cars = getAllCars();
 
         ListView listView = findViewById(R.id.list);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, cars);
+        adapter = new CarAdaptor(this, R.layout.car_item, cars);
         listView.setAdapter(adapter);
 
         SearchView searchView = findViewById(R.id.searchView);
@@ -59,7 +59,7 @@ public class SearchActivity extends AppCompatActivity {
         });
 
         listView.setOnItemClickListener((adapterView, view, i, l) -> {
-            Car selectedCar = cars.get(i);
+            Car selectedCar = adapter.getItem(i); // Now refers to the correct item
             Intent intent = new Intent(SearchActivity.this, CarDetailActivity.class);
             intent.putExtra("SelectedCar", selectedCar);
             startActivity(intent);
