@@ -1,12 +1,12 @@
 {
   "cars": [
     {
-      "name": "Audi RS3",
-      "price": "$90,000",
+      "name": "Audi RS3 Sedan",
+      "price": "$93,000",
       "category": "Sedan",
       "description": "Nardo Grey Four door performance sedan\nEngine size: 2480cc\nTransmission: Automatic\nFuel Economy: 8.3L/100km\nMileage: 30,000km",
-      "image": "audi_rs3",
-      "slide_images": ["audi_rs3", "audi_rs3_2", "audi_rs3_3"]
+      "image": "audi_rs3_sedan",
+      "slide_images": ["audi_rs3_sedan", "audi_rs3_sedan_2", "audi_rs3_sedan_3"]
     },
     {
       "name": "Mercedes-AMG C63",
@@ -308,12 +308,12 @@
       "slide_images": ["merc_a45_amg", "merc_a45_amg_2", "merc_a45_amg_3"]
     },
     {
-      "name": "Audi RS3",
-      "price": "$115,000",
+      "name": "Audi RS3 Sportback",
+      "price": "$90,000",
       "category": "Hatchback",
       "description": "Blue Performance hatch\nEngine size: 2480cc\nTransmission: Automatic\nFuel Economy: 8.5L/100km\nMileage: 25,000km",
-      "image": "audi_rs3",
-      "slide_images": ["audi_rs3", "audi_rs3_2", "audi_rs3_3"]
+      "image": "audi_rs3_sportback",
+      "slide_images": ["audi_rs3_sportback", "audi_rs3_sportback_2", "audi_rs3_sportback_3"]
     },
     {
       "name": "BMW M135i",

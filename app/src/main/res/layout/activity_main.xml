@@ -21,7 +21,7 @@ tools:context=".MainActivity">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Best Sellers"
+                android:text="Most Viewed"
                 android:textSize="24sp"
                 android:layout_marginBottom="6dp"/>
 
@@ -29,14 +29,17 @@ tools:context=".MainActivity">
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"/>
+                android:layout_height="200dp"
+                android:clipToOutline="true"
+                android:background="@drawable/round_outline"
+                android:layout_marginBottom="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Categories"
                 android:textSize="24sp"
-                android:layout_marginBottom="6dp"/>
+                android:layout_marginBottom="8dp"/>
 
             <GridLayout
                 android:layout_width="wrap_content"
