@@ -26,20 +26,10 @@ tools:context=".MainActivity">
                 android:layout_marginBottom="6dp"/>
 
     <!--        https://github.com/denzcoskun/ImageSlideshow -->
-            <com.denzcoskun.imageslider.ImageSlider
-                android:id="@+id/mainActivityimageslider"
-                android:layout_width="346dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center_horizontal"
-                app:iss_auto_cycle="true"
-                app:iss_delay="3000"
-                app:iss_period="3000"
-                android:layout_marginBottom="16dp"
-                app:iss_title_background="@drawable/gradient"
-                android:clipToOutline="true"
-                android:background="@drawable/round_outline">
-
-            </com.denzcoskun.imageslider.ImageSlider>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
 
             <TextView
                 android:layout_width="match_parent"

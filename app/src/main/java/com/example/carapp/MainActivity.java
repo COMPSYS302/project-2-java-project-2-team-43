@@ -6,11 +6,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
+import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import com.denzcoskun.imageslider.ImageSlider;
-import com.denzcoskun.imageslider.constants.ScaleTypes;
-import com.denzcoskun.imageslider.models.SlideModel;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private ViewHolder vh;
-    ImageSlider imageSlider;
-    ArrayList<SlideModel> slideModels;
+    ViewPager viewPager;
+    ViewPagerAdapter viewPagerAdapter;
 
     // Get the view count for a car
     private int getViewCount(String carName) {
@@ -58,9 +55,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Initialize image slider and slide models
-        imageSlider = findViewById(R.id.mainActivityimageslider);
-        slideModels = new ArrayList<>();
+        // Initialize viewPager
+        viewPager = findViewById(R.id.viewPager);
 
         vh = new ViewHolder();
 
@@ -128,33 +124,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Clear the existing slide models
-        slideModels.clear();
-
         // Limit the number of cars added to slideModels
         int limit = 5;
 
-        // Add slide models for each car to the list only if car image is available
+        List<Car> topViewedCars = new ArrayList<>();
+
+        // Add top viewed cars to the list
         for (int i = 0; i < Math.min(carList.size(), limit); i++) {
             Car car = carList.get(i);
             String imageName = car.getImage();
             int imageResource = getResources().getIdentifier(imageName, "drawable", getPackageName());
             if (imageResource != 0) {
-                slideModels.add(new SlideModel(imageResource, ScaleTypes.CENTER_CROP));
+                topViewedCars.add(car);
             }
         }
 
-        // If no car images were available, add default car types
-        if (slideModels.isEmpty()) {
-            slideModels.add(new SlideModel(R.drawable.sedan, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.hatchback, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.convertible, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.coupe, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.suv, ScaleTypes.CENTER_CROP));
-            slideModels.add(new SlideModel(R.drawable.pickup, ScaleTypes.CENTER_CROP));
-        }
-
-        imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
+        // Initialize ViewPagerAdapter and set it on the ViewPager
+        viewPagerAdapter = new ViewPagerAdapter(this, topViewedCars);
+        viewPager.setAdapter(viewPagerAdapter);
     }
 
     public String loadJSONFromAsset() {
