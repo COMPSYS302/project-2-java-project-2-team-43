@@ -1,23 +1,38 @@
 package com.example.carapp;
 
-
-import static java.lang.Integer.parseInt;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
-
-import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 public class CarDetailActivity extends AppCompatActivity {
+
+    // Get the view count for a car
+    private int getViewCount(String carName) {
+        SharedPreferences prefs = getSharedPreferences("viewCounts", MODE_PRIVATE);
+        return prefs.getInt(carName, 0);
+    }
+
+    // Update the view count for a car
+    private void updateViewCount(String carName) {
+        SharedPreferences prefs = getSharedPreferences("viewCounts", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        int count = getViewCount(carName);
+        editor.putInt(carName, count + 1);
+        editor.apply();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +49,9 @@ public class CarDetailActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         Car selectedCar = intent.getParcelableExtra("SelectedCar");
+
+        // Update the view count for this car
+        updateViewCount(selectedCar.getName());
 
         ImageSlider imageSlider = findViewById(R.id.detailsActivityimageslider);
         ArrayList<SlideModel> slideModels = new ArrayList<>();

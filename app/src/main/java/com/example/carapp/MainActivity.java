@@ -2,6 +2,7 @@ package com.example.carapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -15,10 +16,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private ViewHolder vh;
+    ImageSlider imageSlider;
+    ArrayList<SlideModel> slideModels;
+
+    // Get the view count for a car
+    private int getViewCount(String carName) {
+        SharedPreferences prefs = getSharedPreferences("viewCounts", MODE_PRIVATE);
+        return prefs.getInt(carName, 0);
+    }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,22 +58,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageSlider imageSlider = findViewById(R.id.mainActivityimageslider);
-        ArrayList<SlideModel> slideModels = new ArrayList<>();
-
-        slideModels.add(new SlideModel(R.drawable.sedan, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.hatchback, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.convertible, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.coupe, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.suv, ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.pickup, ScaleTypes.CENTER_CROP));
-
-        imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
+        // Initialize image slider and slide models
+        imageSlider = findViewById(R.id.mainActivityimageslider);
+        slideModels = new ArrayList<>();
 
         vh = new ViewHolder();
 
         vh.sedan.setOnClickListener(new View.OnClickListener() {
-
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CarListActivity.class);
                 intent.putExtra("SELECTED_CATEGORY", "Sedan");
@@ -72,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         vh.hatchback.setOnClickListener(new View.OnClickListener() {
-
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CarListActivity.class);
                 intent.putExtra("SELECTED_CATEGORY", "Hatchback");
@@ -81,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         vh.convertible.setOnClickListener(new View.OnClickListener() {
-
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CarListActivity.class);
                 intent.putExtra("SELECTED_CATEGORY", "Convertible");
@@ -90,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         vh.coupe.setOnClickListener(new View.OnClickListener() {
-
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CarListActivity.class);
                 intent.putExtra("SELECTED_CATEGORY", "Coupe");
@@ -99,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         vh.suv.setOnClickListener(new View.OnClickListener() {
-
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CarListActivity.class);
                 intent.putExtra("SELECTED_CATEGORY", "SUV");
@@ -108,13 +105,56 @@ public class MainActivity extends AppCompatActivity {
         });
 
         vh.pickup.setOnClickListener(new View.OnClickListener() {
-
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CarListActivity.class);
                 intent.putExtra("SELECTED_CATEGORY", "Pickup");
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // Get the list of cars
+        List<Car> carList = getCarList();
+
+        // Sort the car list based on view counts
+        Collections.sort(carList, new Comparator<Car>() {
+            @Override
+            public int compare(Car car1, Car car2) {
+                return getViewCount(car2.getName()) - getViewCount(car1.getName());
+            }
+        });
+
+        // Clear the existing slide models
+        slideModels.clear();
+
+        // Limit the number of cars added to slideModels
+        int limit = 5;
+
+        // Add slide models for each car to the list only if car image is available
+        for (int i = 0; i < Math.min(carList.size(), limit); i++) {
+            Car car = carList.get(i);
+            String imageName = car.getImage();
+            int imageResource = getResources().getIdentifier(imageName, "drawable", getPackageName());
+            if (imageResource != 0) {
+                slideModels.add(new SlideModel(imageResource, ScaleTypes.CENTER_CROP));
+            }
+        }
+
+        // If no car images were available, add default car types
+        if (slideModels.isEmpty()) {
+            slideModels.add(new SlideModel(R.drawable.sedan, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.hatchback, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.convertible, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.coupe, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.suv, ScaleTypes.CENTER_CROP));
+            slideModels.add(new SlideModel(R.drawable.pickup, ScaleTypes.CENTER_CROP));
+        }
+
+        imageSlider.setImageList(slideModels, ScaleTypes.CENTER_CROP);
     }
 
     public String loadJSONFromAsset() {
