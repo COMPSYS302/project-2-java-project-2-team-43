@@ -79,4 +79,11 @@ public class CarDetailActivity extends AppCompatActivity {
         priceTextView.setText(selectedCar.getPrice());
         descriptionTextView.setText(selectedCar.getDescription());
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
 }

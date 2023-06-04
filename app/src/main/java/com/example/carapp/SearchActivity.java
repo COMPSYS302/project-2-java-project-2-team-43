@@ -63,6 +63,7 @@ public class SearchActivity extends AppCompatActivity {
             Intent intent = new Intent(SearchActivity.this, CarDetailActivity.class);
             intent.putExtra("SelectedCar", selectedCar);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_from_bottom, R.anim.slide_to_top);
         });
     }
 
@@ -109,5 +110,12 @@ public class SearchActivity extends AppCompatActivity {
         }
         return json;
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
 
 }
